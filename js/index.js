@@ -47,48 +47,55 @@ bodyBtn.addEventListener("click", () => {
 	})
 	wingColor2Inner.style.borderTopColor = colors[parrotCounter1]
 	parrotCounter1 = setCounterValue(parrotCounter1)
+   console.log(parrotCounter1)
 })
 mainWingBtn.addEventListener("click", () => {
 	wingColor1.style.backgroundColor = colors[parrotCounter2]
 	parrotCounter2 = setCounterValue(parrotCounter2)
+   console.log(parrotCounter2)
 })
 subWingBtn.addEventListener("click", () => {
 	wingColor2.style.borderTopColor = colors[parrotCounter3]
 	parrotCounter3 = setCounterValue(parrotCounter3)
+   console.log(parrotCounter3)
 })
 upperBeakBtn.addEventListener("click", () => {
 	beakUpper.style.backgroundColor = colors[parrotCounter4]
 	parrotCounter4 = setCounterValue(parrotCounter4)
+   console.log(parrotCounter4)
 })
 lowerBeakBtn.addEventListener("click", () => {
 	beakLower.style.backgroundColor = colors[parrotCounter5]
 	parrotCounter5 = setCounterValue(parrotCounter5)
+   console.log(parrotCounter5)
 })
 clawBtn.addEventListener("click", () => {
 	bigParrotLeg.style.backgroundColor = colors[parrotCounter6]
 	parrotCounter6 = setCounterValue(parrotCounter6)
+   console.log(parrotCounter6)
 })
 tailWingBtn.addEventListener("click", () => {
 	tailWing.forEach((item) => (item.style.backgroundColor = colors[parrotCounter7]))
 	parrotCounter7 = setCounterValue(parrotCounter7)
+   console.log(parrotCounter7)
 })
 headWingBtn.addEventListener("click", () => {
 	parrotFeather.style.backgroundColor = colors[parrotCounter8]
 	parrotCounter8 = setCounterValue(parrotCounter8)
+   console.log(parrotCounter8)
 })
 eyePatchBtn.addEventListener("click", () => {
 	eyePatch.style.backgroundColor = colors[parrotCounter9]
 	parrotCounter9 = setCounterValue(parrotCounter9)
+   console.log(parrotCounter9)
 })
 eyeBtn.addEventListener("click", () => {
 	parrotEye.style.backgroundColor = colors[parrotCounter10]
 	parrotCounter10 = setCounterValue(parrotCounter10)
+   console.log(parrotCounter10)
 })
 branch.addEventListener("click", () => {
 	parrotBranch.style.backgroundColor = colors[parrotCounter11]
 	parrotCounter11 = setCounterValue(parrotCounter11)
-})
-branch.addEventListener("click", () => {
-	parrotBranch.style.backgroundColor = colors[parrotCounter11]
-	parrotCounter11 = setCounterValue(parrotCounter11)
+   console.log(parrotCounter11)
 })
