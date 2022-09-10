@@ -88,3 +88,7 @@ branch.addEventListener("click", () => {
 	parrotBranch.style.backgroundColor = colors[parrotCounter11]
 	parrotCounter11 = setCounterValue(parrotCounter11)
 })
+branch.addEventListener("click", () => {
+	parrotBranch.style.backgroundColor = colors[parrotCounter11]
+	parrotCounter11 = setCounterValue(parrotCounter11)
+})
