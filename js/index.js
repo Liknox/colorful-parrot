@@ -25,66 +25,66 @@ let eyePatch = document.querySelector(".eye-patch")
 let parrotEye = document.querySelector(".eye")
 let parrotBranch = document.querySelector(".branch")
 
-let counter1 = 0
-let counter2 = 0
-let counter3 = 0
-let counter4 = 0
-let counter5 = 0
-let counter6 = 0
-let counter7 = 0
-let counter8 = 0
-let counter9 = 0
-let counter10 = 0
-let counter11 = 0
+let parrotCounter1 = 0
+let parrotCounter2 = 0
+let parrotCounter3 = 0
+let parrotCounter4 = 0
+let parrotCounter5 = 0
+let parrotCounter6 = 0
+let parrotCounter7 = 0
+let parrotCounter8 = 0
+let parrotCounter9 = 0
+let parrotCounter10 = 0
+let parrotCounter11 = 0
 
-function setCounterValue(counter) {
-	return counter < colors.length - 1 ? counter + 1 : 0
+function setCounterValue(parrotCounter) {
+	return parrotCounter < colors.length - 1 ? parrotCounter + 1 : 0
 }
 
 bodyBtn.addEventListener("click", () => {
 	bodyClr.forEach((item) => {
-		item.style.backgroundColor = colors[counter1]
+		item.style.backgroundColor = colors[parrotCounter1]
 	})
-	wingColor2Inner.style.borderTopColor = colors[counter1]
-	counter1 = setCounterValue(counter1)
+	wingColor2Inner.style.borderTopColor = colors[parrotCounter1]
+	parrotCounter1 = setCounterValue(parrotCounter1)
 })
 mainWingBtn.addEventListener("click", () => {
-	wingColor1.style.backgroundColor = colors[counter2]
-	counter2 = setCounterValue(counter2)
+	wingColor1.style.backgroundColor = colors[parrotCounter2]
+	parrotCounter2 = setCounterValue(parrotCounter2)
 })
 subWingBtn.addEventListener("click", () => {
-	wingColor2.style.borderTopColor = colors[counter3]
-	counter3 = setCounterValue(counter3)
+	wingColor2.style.borderTopColor = colors[parrotCounter3]
+	parrotCounter3 = setCounterValue(parrotCounter3)
 })
 upperBeakBtn.addEventListener("click", () => {
-	beakUpper.style.backgroundColor = colors[counter4]
-	counter4 = setCounterValue(counter4)
+	beakUpper.style.backgroundColor = colors[parrotCounter4]
+	parrotCounter4 = setCounterValue(parrotCounter4)
 })
 lowerBeakBtn.addEventListener("click", () => {
-	beakLower.style.backgroundColor = colors[counter5]
-	counter5 = setCounterValue(counter5)
+	beakLower.style.backgroundColor = colors[parrotCounter5]
+	parrotCounter5 = setCounterValue(parrotCounter5)
 })
 clawBtn.addEventListener("click", () => {
-	bigParrotLeg.style.backgroundColor = colors[counter6]
-	counter6 = setCounterValue(counter6)
+	bigParrotLeg.style.backgroundColor = colors[parrotCounter6]
+	parrotCounter6 = setCounterValue(parrotCounter6)
 })
 tailWingBtn.addEventListener("click", () => {
-	tailWing.forEach((item) => (item.style.backgroundColor = colors[counter7]))
-	counter7 = setCounterValue(counter7)
+	tailWing.forEach((item) => (item.style.backgroundColor = colors[parrotCounter7]))
+	parrotCounter7 = setCounterValue(parrotCounter7)
 })
 headWingBtn.addEventListener("click", () => {
-	parrotFeather.style.backgroundColor = colors[counter8]
-	counter8 = setCounterValue(counter8)
+	parrotFeather.style.backgroundColor = colors[parrotCounter8]
+	parrotCounter8 = setCounterValue(parrotCounter8)
 })
 eyePatchBtn.addEventListener("click", () => {
-	eyePatch.style.backgroundColor = colors[counter9]
-	counter9 = setCounterValue(counter9)
+	eyePatch.style.backgroundColor = colors[parrotCounter9]
+	parrotCounter9 = setCounterValue(parrotCounter9)
 })
 eyeBtn.addEventListener("click", () => {
-	parrotEye.style.backgroundColor = colors[counter10]
-	counter10 = setCounterValue(counter10)
+	parrotEye.style.backgroundColor = colors[parrotCounter10]
+	parrotCounter10 = setCounterValue(parrotCounter10)
 })
 branch.addEventListener("click", () => {
-	parrotBranch.style.backgroundColor = colors[counter11]
-	counter11 = setCounterValue(counter11)
+	parrotBranch.style.backgroundColor = colors[parrotCounter11]
+	parrotCounter11 = setCounterValue(parrotCounter11)
 })
