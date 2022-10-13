@@ -41,22 +41,27 @@ let parrotCounter10 = 4
 let parrotCounter11 = 0
 
 const setCounterValue = e => (e < colors.length - 1 ? e + 1 : 0)
-function setBcColor(obj, counter) {
-   obj.style.backgroundColor = colors[counter]
-
+function setBcColor(obj, counter, check) {
+   if (check === "top") {
+      obj.style.borderTopColor = colors[counter]
+      console.log(123)
+   } else {
+      obj.style.backgroundColor = colors[counter]
+      console.log(0)
+   }
    return counter < colors.length - 1 ? counter + 1 : 0
 }
-function setBTop(obj, counter) {
-   obj.style.borderTopColor = colors[counter]
-   return counter < colors.length - 1 ? counter + 1 : 0
-}
+// function setBTop(obj, counter) {
+//    obj.style.borderTopColor = colors[counter]
+//    return counter < colors.length - 1 ? counter + 1 : 0
+// }
 
 bodyBtn.addEventListener("click", () => {
    // bodyClr1.style.backgroundColor = colors[parrotCounter1]
    // bodyClr2.style.backgroundColor = colors[parrotCounter1]
    // wingColor2Inner.style.borderTopColor = colors[parrotCounter1]
    // parrotCounter1 = setCounterValue(parrotCounter1)
-   setBTop(wingColor2Inner, parrotCounter1)
+   setBcColor(wingColor2Inner, parrotCounter1, "top")
    setBcColor(bodyClr1, parrotCounter1)
    parrotCounter1 = setBcColor(bodyClr2, parrotCounter1)
    // console.log(parrotCounter1)
@@ -70,7 +75,7 @@ mainWingBtn.addEventListener("click", () => {
 subWingBtn.addEventListener("click", () => {
    // wingColor2.style.borderTopColor = colors[parrotCounter3]
    // parrotCounter3 = setCounterValue(parrotCounter3)
-   parrotCounter3 = setBTop(wingColor2, parrotCounter3)
+   parrotCounter3 = setBcColor(wingColor2, parrotCounter3, "top")
    // console.log(parrotCounter3)
 })
 upperBeakBtn.addEventListener("click", () => {
