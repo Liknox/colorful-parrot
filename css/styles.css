@@ -18,18 +18,19 @@ body {
 	left: 50%;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	border-radius: 0.9em;
+	border-radius: 3em;
 }
 .wrapper {
 	min-height: 18.75em;
 	min-width: 18.75em;
 	z-index: 1;
+   margin-right: 10px;
 	position: relative;
 	border-radius: 0.9em 0.9em 0 0;
 	display: grid;
 }
 .controls {
-	padding: 1.8em 0.6em 0 0.6em;
+	padding: 0 0.6em 0 1.5em;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 	grid-gap: 1.2em;
@@ -191,10 +192,14 @@ button {
 	}
 	.controls {
 		border: none;
-		border-top: 2px dashed #000000;
+		border-top: 2px dashed #000000;  
+      padding: 30px 0 0 0;
 	}
 	.controls button {
 		font-size: 0.9em;
 		height: 3em;
 	}
+   .wrapper {
+      margin: 0;
+   }
 }
